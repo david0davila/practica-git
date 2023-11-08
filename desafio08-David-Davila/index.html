@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afiliacion</title>
+    <link rel="stylesheet" id="estilo1" href="./css/estilos.css">
+    <!-- <link rel="stylesheet" id="estilo2" href="./css/estilos-peliculas.css"> -->
+    <!-- <link rel="stylesheet" id="estilo3" href="./css/estilos-futuro.css"> -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div>
+        <input type="button" value="siguiente estilo" id="change-style">
+        <input type="button" value="Estilo Aleatorio" id="change-style2">
+        <input type="button" value="recordar" id="change-record">
+
+        <select id="select-estilos">
+            <option value="">Sin estilo</option>
+            <option value="./css/estilos.css">Estilo principal</option>
+            <option value="./css/estilos-peliculas.css">Estilo películas</option>
+            <option value="./css/estilos-futuro.css">Estilo fututista</option>
+        </select>
+    </div>
+
+    <div>
+        <input type="radio" name="estilos-radio" id="sin-estilo" value="">
+        <label for="sin-estilo" class="estilos-radio">Sin estilo</label>
+
+        <input type="radio" name="estilos-radio" id="estilo-principal" value="./css/estilos.css">
+        <label for="estilo-principal" class="estilos-radio">Estilo principal</label>
+
+        <input type="radio" name="estilos-radio" id="estilo2" value="./css/estilos-peliculas.css">
+        <label for="estilo2" class="estilos-radio">Estilo películas</label>
+
+        <input type="radio" name="estilos-radio" id="estilo3" value="./css/estilos-futuro.css">
+        <label for="estilo3" class="estilos-radio">Estilo futurista</label>
+    </div>
+    <header>
+        <div>
+        <h1 class="title"><strong>Vení al Gym!</strong> <span class="material-symbols-outlined">Exercise</span></h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="flex-container">
+            <form action="" class="formulario">
+
+                <fieldset class="campo campo1">
+                    <legend class="legend">
+                        <span class="material-symbols-outlined"> emoji_people</span>
+                            <strong>Datos Personales</strong>
+                        <span class="material-symbols-outlined"> visibility</span>
+                    </legend>
+
+
+                    <div class="form form1">
+                        <div>
+                            <label for="nom" class="formulario-individual"><span>Nombre:*</span></label>
+                            <input type="text" id="nom" class="input-texto" autofocus required>
+                        </div>
+
+                        <div>
+                            <label for="apellido" class="formulario-individual">
+                                <span>Apellido:*</span>
+                            </label>
+                            <input type="text" id="apellido" class="input-texto"  required>
+                        </div>
+
+                        <div>
+                            <label for="doc" class="formulario-individual">
+                                <span>Documento:*</span>
+                            </label>
+                            <input type="text" id="doc" class="input-texto"  required>
+                        </div>
+
+                        <div>
+                            <label for="nacionalidad" class="formulario-individual">
+                                <span>Nacionalidad:*</span>
+                            </label>
+                            <select name="nacion" id="nacionalidad" class="input-texto" >
+                                <option value="SELECCIONAR" disabled selected><span>- Seleccionar -</span> </option>
+                                <option value="ARG">Argentina</option>
+                                <option value="BRA">Brasileña</option>
+                                <option value="URU">Uruguaya</option>
+                                <option value="OTRO">Otra</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="text-area" class="formulario-individual"><span>Contanos un poco de vos...</span>
+                            </label>
+                            <textarea name="areatext" id="text-area" class="input-texto" ></textarea>
+                        </div>
+
+                        <div>
+                            <p class="sex-p">Sexo:*</p>
+
+                            <div class="sex">
+                                <input type="radio" name="sexo" id="masc" value="F" required>
+                                <label for="masc" class="formulario-individual radio"><span>Femenino</span></label>
+
+                                <input type="radio" name="sexo" id="fem" value="M" required>
+                                <label for="fem" class="radio"><span>Masculino</span></label>
+
+                                <input type="radio" name="sexo" id="otro" value="O" required>
+                                <label for="otro" class="radio"><span>Otro</span></label>
+                            </div>
+
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="contorno"></div>
+
+                <fieldset class="campo campo2">
+                    <legend class="legend">
+                        <span class="material-symbols-outlined">phone_iphone</span>
+                            <strong>Datos de Contacto</strong>
+                        <span class="material-symbols-outlined">mail</span>
+                    </legend>
+
+                    <div class="form form2">
+                        <div>
+                            <label for="telefono" class="formulario-individual"><span>Teléfono*</span></label>
+                            <input type="text" name="phone" id="telefono" class="input-texto"  placeholder="Código de área y número" required>
+                        </div>
+
+                        <div class="for2-email">
+                            <label for="email" class="formulario-individual"><span>Dirección de correo electrónico:*</span></label>
+                            <input type="email" name="direccion" id="email" class="input-texto" placeholder="Ej: mail@gmail.com" required>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="contorno"></div>
+
+                <fieldset class="campo3">
+                    <legend class="legend">
+                        <span class="material-symbols-outlined">directions_bike</span>
+                            <strong>Actividades</strong>
+                        <span class="material-symbols-outlined">sports_gymnastics</span>
+                    </legend>
+
+                    <div class="form-2">
+                        <p class="text-form2">Por favor, indicá cuáles actividades te interesan.</p>
+                        <div>
+
+                            <label><p>Sede Palermo:</p></label>
+
+                            <input type="checkbox" name="actividad" id="basquet">
+                            <label for="basquet"><span>Básquet</span></label>
+
+                            <input type="checkbox" name="actividad" id="boxeo">
+                            <label for="boxeo"><span>Boxeo</span></label>
+
+                            <input type="checkbox" name="actividad" id="futbol">
+                            <label for="futbol"><span>Fútbol</span></label>
+
+                            <input type="checkbox" name="actividad" id="tenis">
+                            <label for="tenis"><span>Tenis</span></label>
+                        </div>
+
+                        <div>
+                            <label><p>Sede Rosario:</p></label>
+
+                            <input type="checkbox" name="actividad" id="basquet-2" class="mycheck">
+                            <label for="basquet-2"><span>Básquet</span></label>
+
+                            <input type="checkbox" name="actividad" id="futbol-2">
+                            <label for="futbol-2"><span>Fútbol</span></label>
+
+                            <input type="checkbox" name="actividad" id="rugby">
+                            <label for="rugby"><span>Rugby</span></label>
+
+                            <input type="checkbox" name="actividad" id="voley">
+                            <label for="voley"><span>Voley</span></label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="ultimo">
+                    <div>
+                        <label for="aceptar">
+                            <input type="checkbox" name="aceptar" id="aceptar" required>
+                            <span>Acepto las condiciones*</span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label for="novedades">
+                            <input type="checkbox" name="novedades" id="novedades">
+                            <span>Deseo recibir novedades</span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <p>*: campo obligatorio.</p>
+                    </div>
+
+                    <div class="botones">
+                        <button><span>Iniciar afiliacion</span></button>
+                        <button type="reset"><span>Restablecer</span></button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+
+    <script src="./js/app.js">
+    </script>
+</body>
+</html>

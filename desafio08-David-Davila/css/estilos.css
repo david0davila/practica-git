@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-width: max-content;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    background-color: rgb(30, 29, 29);
+    min-width: max-content;
+}
+
+header {
+    /* font-family: 'Roboto',sans-serif; */
+    /* font-family: 'Poppins',sans-serif; */
+    white-space: nowrap;
+    color: white;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    border: 1rem solid rgb(30, 29, 29);
+    border-top: 0.7rem solid rgb(51, 87, 75);
+    border-bottom: 0.7rem solid rgb(51, 87, 75);
+    font-size: 36px;
+    margin-top: 2vh;
+}
+
+.title span{
+    font-size: 27px;
+}
+
+
+.title::selection,
+strong::selection,
+form::selection,
+span::selection,
+p::selection,
+select::selection,
+div::selection,
+.input-texto::selection {
+    background-color: rgb(159, 190, 181);
+}
+
+.sex{
+    display: flex;
+}
+
+.sex-p{
+    text-align: center;
+}
+
+.input-texto{
+    width: 20vw;
+    min-width: 20em;
+    height: 2em;
+}
+
+textarea {
+    resize: vertical;
+    height: 8vh;
+    min-height: 10em;
+}
+
+
+.formulario-individual {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+input, textarea{
+    border: 0.2px solid rgb(78, 132, 114);
+    border-radius: 3px;
+    color: black;
+    padding: 0.5vw;
+}
+
+input[type="text"]:focus, input[type="email"]:focus,input[type="number"]:focus, textarea:focus {
+    background-color: rgb(78, 132, 114);
+    outline: none;
+    color: aliceblue;
+}
+
+input[type="text"], input[type="email"], textarea{
+    text-align: end;
+    min-width: 20em;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 34vw;
+    height: auto;
+    padding: 1vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.form label{
+    padding: 1vh;
+}
+
+.for2-email{
+    display: grid;
+    place-items: center;
+}
+
+.form-2 {
+    display: grid;
+    padding: 1vh;
+    gap:2vh;
+}
+
+.form-2 label p {
+    padding-bottom: 1em;
+}
+
+.text-form2{
+    font-size: 14px;
+}
+
+.campo {
+    display: grid;
+    place-items: center;
+}
+
+fieldset {
+    background-color: rgb(182, 212, 202);
+    margin: 1vw;
+    border: 2px solid rgb(78, 132, 114);
+    border-radius: 5px;
+    padding-bottom: 1vh;
+}
+
+fieldset:focus-within{
+    background-color: rgb(157, 196, 183);
+}
+
+.contorno {
+    margin: 1.5em auto 1.5em auto;
+    width: 16vw;
+    min-width: 12em;
+    border-bottom: 12px dotted rgb(157, 196, 183);
+}
+
+.legend {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgb(51, 87, 75);
+    border: 1px solid rgb(51, 87, 75);
+    border-radius: 5% / 20%;
+    margin-left: 1vw;
+    padding: 8px;
+}
+
+.legend strong{
+    padding: 2px;
+    font-size: 15px;
+    text-transform: capitalize, uppercase;
+}
+
+legend strong::first-letter{
+    font-size: 20px ;
+}
+
+fieldset:focus-within > legend {
+    background-color: rgb(29, 53, 45);
+}
+
+.ultimo {
+    margin: 1.2vw 0 0 1vh;
+    display: grid;
+    color: white;
+    gap: 0.5vw;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.botones button {
+    padding: 8px;
+    background-color: rgb(51, 87, 75);
+    text-decoration: none;
+    color: rgb(182, 212, 202);
+    border: 1px solid rgb(78, 132, 114);
+    border-radius: 4px;
+}
+
+.botones button:hover {
+    background-color: rgb(182, 212, 202);
+    color: rgb(51, 87, 75);
+}
+
+#change-style2 {
+    color: transparent;
+    background-color: whitesmoke;
+    background-image: url("../img/random2.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: auto;
+    width: 1%;
+}
+
+.hundido {
+    background-color: green;
+}
+
+.estilos-radio {
+    color: whitesmoke;
+}
