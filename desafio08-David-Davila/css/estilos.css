@@ -43,7 +43,8 @@ span::selection,
 p::selection,
 select::selection,
 div::selection,
-.input-texto::selection{
+.input-texto::selection,
+.first-letter::selection{
     background-color: rgb(159, 190, 181);
 }
 
