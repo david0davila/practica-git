@@ -152,26 +152,26 @@ fieldset:focus-within{
 
 .legend {
     font-family: 'Roboto', sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
     display: flex;
     text-transform: uppercase;
     color: white;
     background-color: rgb(51, 87, 75);
     border: 1px solid rgb(51, 87, 75);
-    border-radius: 5% / 20%;
+    border-radius: 4% / 15%;
     margin-left: 1vw;
-    padding: 8px;
+    padding: 4px;
 }
 
-.legend strong{
-    padding: 2px;
-    font-size: 15px;
-    text-transform: capitalize, uppercase;
+.first-letter{
+    padding: 3px;
+    font-size: 14px;
+
 }
 
-legend strong::first-letter{
-    font-size: 20px ;
+.first-letter::first-letter{
+    font-size: 18px ;
 }
 
 fieldset:focus-within > legend {
