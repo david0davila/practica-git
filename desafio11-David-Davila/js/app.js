@@ -4,7 +4,6 @@ const menuItems = [
     { name: "Pizza", price: 12 },
     { name: "Ensalada", price: 8 },
     { name: "Milanesa", price: 6 }
-    // Agrega los demás artículos del menú
 ];
 
 // Variables para almacenar la información del pedido
@@ -65,7 +64,7 @@ function placeOrder() {
     // Paso 5: Calcular el costo total del pedido
     calculateTotalCost();
 
-    // Paso 6: Simular el envío del pedido al restaurante (puedes usar una llamada a una API aquí)
+    // Paso 6: Simular el envío del pedido al restaurante
 
     // console.log("Pedido enviado al restaurante:");
     // console.log("Nombre: " + userName);
