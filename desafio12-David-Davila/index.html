@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA Peliculas</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Peliculas</h1>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <label for="searchInput">Buscar por título:</label>
+            <input type="text" id="searchInput" oninput="searchMovies()">
+        </div>
+
+        <div>
+            <label for="yearFilter">Filtrar por año:</label>
+            <input type="number" id="yearFilter" oninput="filterByYear()">
+        </div>
+
+        <div>
+            <h2>Lista de Películas</h2>
+            <ul id="movieList"></ul>
+        </div>
+
+        <div>
+            <h3>Agregar Nueva Película</h3>
+            <form onsubmit="addMovie(event)">
+                <label for="newTitle">Título:</label>
+                <input type="text" id="newTitle" required>
+                <label for="newDescription">Descripción:</label>
+                <textarea id="newDescription" required></textarea>
+                <label for="newYear">Año de lanzamiento:</label>
+                <input type="number" id="newYear" required>
+                <button type="submit">Agregar Película</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        2023&COPY; Realizado por David Davila
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+</html>
