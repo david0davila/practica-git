@@ -1,0 +1,106 @@
+body {
+    background-color: bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    #root {
+        display: grid;
+        grid-template-rows: auto minmax(500px, auto) auto;
+
+
+        ul {
+            list-style: upper-roman;
+        }
+
+        .title,
+        .footer {
+            text-align: center;
+            color: bisque;
+
+
+        }
+
+        .title img {
+            height: 40px;
+        }
+
+        .enter__task {
+            display: block;
+            background-color: rgb(240, 182, 111);
+            box-shadow: 0px -6px 16px 0px rgba(0,0,0,0.75);
+            border-radius: 1.5rem;
+            padding: 0.2em;
+            text-align: center;
+            text-transform: uppercase;
+
+            label,
+            input,
+            button {
+                margin: 0.2em;
+            }
+
+            button {
+                background-color: blueviolet;
+                border-radius: 5px;
+
+            }
+
+            input {
+                text-transform: capitalize;
+
+            }
+        }
+
+        .list__task {
+            display: flex;
+            flex-direction: column;
+
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+
+            width: 60%;
+            background-color: rgb(240, 182, 111);
+            text-align: center;
+
+            border: 8px solid rgb(240, 182, 111);
+            border-radius: 15px;
+
+            box-shadow: 5px -3px 10px -1px rgba(0, 0, 0, 0.75),
+                inset 5px -5px 10px -1px rgba(0, 0, 0, 0.75);
+
+            h2 {
+                border-bottom: 2px dashed black;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-content: start;
+                margin-right: auto;
+
+                li {
+                    text-transform: capitalize;
+
+                    button {
+                        background-color: rgba(255, 0, 0, 0.6);
+                        border-radius: 5px;
+                        font-size: 0.5em;
+                        margin-left: 2.5em;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    #task {
+        border: 2px solid black;
+    }
+
+    .footer {
+        background-color: rgb(240, 182, 111);
+
+    }
+}
