@@ -1,0 +1,40 @@
+
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: rgb(37, 37, 181);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+        background-color: rgb(37, 37, 181);
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: darken(rgb(37, 37, 181), 10%);
+        }
+    }
+}
+
+.favorite-icon,
+.notFavoriteIcon {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.selected-task {
+    border: 3px solid black;
+}

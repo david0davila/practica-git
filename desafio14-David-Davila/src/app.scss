@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "Super Plants";
+    src: url("/fonts/super_plants.ttf");
+}
+
+html {
+    background-color: bisque;
+}
+
+.app-container {
+    height: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+
+    h1 {
+        color: black;
+        margin-bottom: 5rem;
+        font-family: "super plants";
+        border-bottom: 1px dotted;
+    }
+}
