@@ -1,0 +1,39 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(12, 12, 87);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 23px 11px rgba(0,0,0,0.75);
+    background-color: rgb(99, 122, 228);
+
+    h1 {
+        color: rgb(216, 202, 14);
+    }
+
+    label {
+        display: block;
+        margin-top: 10px;
+        font-size: 18px;
+        color: rgb(70, 70, 70);
+    }
+
+    input {
+        width: 90%;
+        padding: 10px;
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 5px;
+    }
+}
